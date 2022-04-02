@@ -1,2 +1,5 @@
 #Printing Hello World
 Print("Hello World")
+
+#Printing Hello World 2x
+print("Hello World 2x")
