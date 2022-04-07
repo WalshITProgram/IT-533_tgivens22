@@ -15,3 +15,7 @@ print(last_name.upper())  #delcaring in upper case letters
 string_var = "Hello" #Storing Hello as variable 
 
 print(string_var + "," " " + first_name.upper() + " " + last_name.lower())  # Hello, <first name> <last name>" with the first name converted to uppercase letters and the last name converted to lowercase letters using string functions.
+
+#4.	Prints out two newlines.
+
+print(2* "\n")  
