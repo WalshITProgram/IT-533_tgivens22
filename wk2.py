@@ -31,7 +31,9 @@ print(my_name[7:13])  #slicing last name from variable starts at 7 and ends at 1
 
 print(my_name.replace("Givens", "Givens, Walsh College Student")) #replacing last name 
 
+# 8.	Prints out the following: "Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible - Francis of Assisi" Your output must have quotes at the beginning and the end of your outputted text.
 
+print("\"Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible - Francis of Assisi\"")
 
 
 
