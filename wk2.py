@@ -35,6 +35,35 @@ print(my_name.replace("Givens", "Givens, Walsh College Student")) #replacing las
 
 print("\"Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible - Francis of Assisi\"")
 
+# 9.	Stores 2 decimal numbers as variables.
 
+from decimal import Decimal
+import decimal #importing decimal module
 
+d1 = decimal.Decimal(1.25)  #storing variables 
 
+d2 = decimal.Decimal(2.50)
+
+#10 Stores one addition, one subtraction, one multiplication, and one division operation of these variables as variables.
+
+a = d1 + d2   # addition
+
+s = d1 - d2   # subtraction
+
+m = d1 * d2   # multiplication
+
+di = d1 / d2  # div
+
+#11 11.	Prints out each of the four results as: <numeric value of variable 1> plus <numeric value of variable 2> equals <value of variable that stored the result of addition>
+
+#13.	Stores the current month as a string variable (e.g. March, June, etc.) and day of the month as a numeric variable.
+
+mon = "April"   #Stores the current month as a string variable
+
+numb = 9 #day of the month as a numeric variable
+
+# 14. Outputs "Today is day <day of month> of the month of <month variable>." This should be on a new line and tabbed over two times. You may pick your own method for displaying this information, but it should be different than the technique you used in step 12.
+
+mess = "        Today is Day" + " " + str(numb) + " of the month" + " " + mon 
+
+print(mess)
