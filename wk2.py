@@ -48,13 +48,38 @@ d2 = decimal.Decimal(2.50)
 
 a = d1 + d2   # addition
 
+print(a)      # printing to check
+
 s = d1 - d2   # subtraction
+
+print(s)      # printing to check
 
 m = d1 * d2   # multiplication
 
+print(m)      # printing to check
+
 di = d1 / d2  # div
 
-#11 11.	Prints out each of the four results as: <numeric value of variable 1> plus <numeric value of variable 2> equals <value of variable that stored the result of addition>
+print(di)     # printing to check
+
+#11 Prints out each of the four results as: <numeric value of variable 1> plus <numeric value of variable 2> equals <value of variable that stored the result of addition>
+
+nv1 = (1.25)
+
+nv2 = (2.50)
+
+nv = nv1 + nv2
+
+print(nv)
+
+# 12 sq root
+
+import math  #importing math
+sq_root = math.sqrt(3.125)  # sq rt vari
+print(f"The sqaure root of" + " " + str(3.125) + " " + "equals" + " " +  str(sq_root))   # fstring
+
+
+
 
 #13.	Stores the current month as a string variable (e.g. March, June, etc.) and day of the month as a numeric variable.
 
