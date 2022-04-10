@@ -73,7 +73,7 @@ y = 2.50
 z = x*y
 print(z)
 
-#11 d 
+#11 division with variable d1 and d2 using format method
 
 t = "the value of variable 1 {} divided by he value of variable 2 {} equals {}".format(1.25,2.50,di)
 print(t)
