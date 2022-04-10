@@ -37,40 +37,34 @@ print("\"Start by doing what's necessary; then do what's possible; and suddenly 
 
 # 9.	Stores 2 decimal numbers as variables.
 
-from decimal import Decimal
-import decimal #importing decimal module
+d1 = 1.25  #storing variables 
 
-d1 = decimal.Decimal(1.25)  #storing variables 
-
-d2 = decimal.Decimal(2.50)
+d2 = 2.50
 
 #10 Stores one addition, one subtraction, one multiplication, and one division operation of these variables as variables.
 
 a = d1 + d2   # addition
 
-print(a)      # printing to check
+print("The addition results in: " + str(a))      # printing to check
 
 s = d1 - d2   # subtraction
 
-print(s)      # printing to check
+print("The subtraction results in: " + str(s))     # printing to check
 
 m = d1 * d2   # multiplication
 
-print(m)      # printing to check
+print("The multiplication results in: " + str(m))    # printing to check
 
 di = d1 / d2  # div
 
-print(di)     # printing to check
+print("The division results in: " + str(di))     # printing to check
 
-#11 Prints out each of the four results as: <numeric value of variable 1> plus <numeric value of variable 2> equals <value of variable that stored the result of addition>
+#11 a Prints out each of the four results as: <numeric value of variable 1> plus <numeric value of variable 2> equals <value of variable that stored the result of addition>
 
-nv1 = (1.25)
+print( str(1.25) + " plus" + " " + str(2.50)  + " equals : " + str(a))
 
-nv2 = (2.50)
-
-nv = nv1 + nv2
-
-print(nv)
+#11 b <numeric value of variable 1> minus <numeric value of variable 2> equals <value of variable that stored the result of subtraction>
+print (f'the value of variable 1 is {d1} minus the value of variable 2 {d2} equals {s}')
 
 # 12 sq root
 
