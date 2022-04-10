@@ -66,6 +66,13 @@ print( str(1.25) + " plus" + " " + str(2.50)  + " equals : " + str(a))
 #11 b <numeric value of variable 1> minus <numeric value of variable 2> equals <value of variable that stored the result of subtraction>
 print (f'the value of variable 1 is {d1} minus the value of variable 2 {d2} equals {s}')
 
+#11 c  <numeric value of variable 1> multiplied by <numeric value of variable 2> equals <value of variable that stored the result of subtraction>
+
+x = 1.25  
+y = 2.50
+z = x*y
+print(z)
+
 # 12 sq root
 
 import math  #importing math
