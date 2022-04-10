@@ -73,6 +73,11 @@ y = 2.50
 z = x*y
 print(z)
 
+#11 d 
+
+t = "the value of variable 1 {} divided by he value of variable 2 {} equals {}".format(1.25,2.50,di)
+print(t)
+
 # 12 sq root
 
 import math  #importing math
