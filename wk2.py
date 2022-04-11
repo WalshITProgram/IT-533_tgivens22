@@ -78,3 +78,8 @@ print(z)
 t = "the value of variable 1 {} divided by he value of variable 2 {} equals {}".format(1.25,2.50,di)    #  dropping d1, d2, and di
 print(t)
 
+# 12 sq root
+
+import math  #importing math
+sq_root = math.sqrt(3.125)  # sq rt vari
+print(f"The sqaure root of" + " " + str(3.125) + " " + "equals" + " " +  str(sq_root))   # fstring with concatenation turning decimal and sq root to string
