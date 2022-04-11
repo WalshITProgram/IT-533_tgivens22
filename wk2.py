@@ -9,3 +9,7 @@ print(first_name.lower()) #declaring in lower case letters
 last_name = "Givens"  #storing last name
 
 print(last_name.upper())  #delcaring in upper case letters 
+
+# 3.    Prints out, "Hello, <first name> <last name>" with the first name converted to uppercase letters and the last name converted to lowercase letters using string functions.
+
+print("Hello," +  " " + first_name.upper() + " " + last_name.lower())   #concatenation hello, first name upper case last name lower case
