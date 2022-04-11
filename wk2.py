@@ -17,3 +17,8 @@ print("Hello," +  " " + first_name.upper() + " " + last_name.lower())   #concate
 #4. Prints out two newlines.
 
 print(2* "\n")  
+
+# 5.    Creates a new variable that stores your first and last name together with a space between both parts.
+
+my_name = "Thomas" + " Givens"  #storing
+print(my_name)                  #printing
