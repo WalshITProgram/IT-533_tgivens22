@@ -89,3 +89,10 @@ print(f"The sqaure root of" + " " + str(3.125) + " " + "equals" + " " +  str(sq_
 mon = "April"   #Stores the current month as a string variable
 
 numb = 9 #day of the month as a numeric variable
+
+# 14. Outputs "Today is day <day of month> of the month of <month variable>." This should be on a new line and tabbed over two times. You may pick your own method for displaying this information, but it should be different than the technique you used in step 12.
+
+mess = "        Today is Day" + " " + str(numb) + " of the month" + " " + mon # coctenation combining string with variables 
+
+print(mess)   # output for mess 
+
