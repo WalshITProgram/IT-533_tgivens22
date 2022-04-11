@@ -35,3 +35,26 @@ print(my_name.replace("Givens", "Givens, Walsh College Student")) #replacing las
 
 print("\"Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible - Francis of Assisi\"")
 
+# 9.    Stores 2 decimal numbers as variables.
+
+d1 = 1.25  #storing variables 
+
+d2 = 2.50
+
+#10 Stores one addition, one subtraction, one multiplication, and one division operation of these variables as variables.
+
+a = d1 + d2   # addition
+
+print("The addition results in: " + str(a))      # printing to check
+
+s = d1 - d2   # subtraction
+
+print("The subtraction results in: " + str(s))     # printing to check
+
+m = d1 * d2   # multiplication
+
+print("The multiplication results in: " + str(m))    # printing to check
+
+di = d1 / d2  # div
+
+print("The division results in: " + str(di))     # printing to check
