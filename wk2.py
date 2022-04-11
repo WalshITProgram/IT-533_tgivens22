@@ -22,3 +22,8 @@ print(2* "\n")
 
 my_name = "Thomas" + " Givens"  #storing
 print(my_name)                  #printing
+
+#6. Slices your last name from the variable you created in step 5 and prints it out. This must take place on one line. 
+
+print(my_name[7:13])  #slicing last name from variable starts at 7 and ends at 13
+
