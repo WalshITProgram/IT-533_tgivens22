@@ -83,3 +83,9 @@ print(t)
 import math  #importing math
 sq_root = math.sqrt(3.125)  # sq rt vari
 print(f"The sqaure root of" + " " + str(3.125) + " " + "equals" + " " +  str(sq_root))   # fstring with concatenation turning decimal and sq root to string
+
+#13.    Stores the current month as a string variable (e.g. March, June, etc.) and day of the month as a numeric variable.
+
+mon = "April"   #Stores the current month as a string variable
+
+numb = 9 #day of the month as a numeric variable
