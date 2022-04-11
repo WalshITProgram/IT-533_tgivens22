@@ -43,34 +43,34 @@ d2 = 2.50
 
 #10 Stores one addition, one subtraction, one multiplication, and one division operation of these variables as variables.
 
-a = d1 + d2   # addition
+a = d1 + d2   # addition variable
 
 print("The addition results in: " + str(a))      # printing to check
 
-s = d1 - d2   # subtraction
+s = d1 - d2   # subtraction  variable
 
 print("The subtraction results in: " + str(s))     # printing to check
 
-m = d1 * d2   # multiplication
+m = d1 * d2   # multiplication  variable
 
 print("The multiplication results in: " + str(m))    # printing to check
 
-di = d1 / d2  # div
+di = d1 / d2  # div  variable
 
 print("The division results in: " + str(di))     # printing to check
 
 #11 a Prints out each of the four results as: <numeric value of variable 1> plus <numeric value of variable 2> equals <value of variable that stored the result of addition>
 
-print( str(1.25) + " plus" + " " + str(2.50)  + " equals : " + str(a))
+print( str(1.25) + " plus" + " " + str(2.50)  + " equals : " + str(a))  #concatenation with variables previously defined and strings
 
 #11 b <numeric value of variable 1> minus <numeric value of variable 2> equals <value of variable that stored the result of subtraction>
-print (f'the value of variable 1 is {d1} minus the value of variable 2 {d2} equals {s}')
+print (f'the value of variable 1 is {d1} minus the value of variable 2 {d2} equals {s}') #f string with variables previously defined
 
 #11 c  <numeric value of variable 1> multiplied by <numeric value of variable 2> equals <value of variable that stored the result of subtraction>
 
-x = 1.25  
-y = 2.50
-z = x*y
+x = 1.25   # defining variable
+y = 2.50   # defining variable
+z = x*y    # performing operation
 print(z)
 
 #11d division with variable d1 and d2 using format method
@@ -92,7 +92,7 @@ numb = 9 #day of the month as a numeric variable
 
 # 14. Outputs "Today is day <day of month> of the month of <month variable>." This should be on a new line and tabbed over two times. You may pick your own method for displaying this information, but it should be different than the technique you used in step 12.
 
-mess = "        Today is Day" + " " + str(numb) + " of the month" + " " + mon # coctenation combining string with variables 
+mess = "        Today is Day" + " " + str(numb) + " of the month" + " " + mon # conctenation combining string with variables 
 
 print(mess)   # output for mess 
 
