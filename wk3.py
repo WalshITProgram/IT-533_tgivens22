@@ -23,6 +23,19 @@ fourth_d = {"Transaction_Date": "1/3/2009, 14:44", "Product": "Product 1", "Pric
 fifth_d = {"Transaction_Date": "1/4/2009, 12:56", "Product": "Product 2", "Price": "3600", "Payment_Type": "Visa", "Name": "Gerd W", "City": "Cahaba Heights", "State": "AL", "Country": "United States"}
 sixth_d = {"Transaction_Date": "1/4/2009, 12:56", "Product": "Product 2", "Price": "3600", "Payment_Type": "Visa", "Name": "Gerd W", "City": "Cahaba Heights", "State": "AL", "Country": "United States"}
 seventh_d = {"Transaction_Date": "1/4/2009, 20:11", "Product": "Product 1", "Price": "1200", "Payment_Type": "Mastercard", "Name": "Fleur", "City": "Peoria", "State": "IL", "Country": "United States"}
-eight_d = {"Transaction_Date": "1/2/2009, 20:09", "Product": "Product 1", "Price": "1200", "Payment_Type": "Mastercard", "Name": "adam", "City": "Martin", "State": "TN", "Country": "United States"}
+eighth_d = {"Transaction_Date": "1/2/2009, 20:09", "Product": "Product 1", "Price": "1200", "Payment_Type": "Mastercard", "Name": "adam", "City": "Martin", "State": "TN", "Country": "United States"}
 ninth_d = {"Transaction_Date": "1/4/2009, 13:17", "Product": "Product 1", "Price": "1200", "Payment_Type": "Mastercard", "Name": "Renee Elisabeth", "City": "Tel Aviv", "State": "Tel Aviv", "Country": "Israel"}
+
+#appending to sales_list
+sales_data.append(first_d)
+sales_data.append(second_d)
+sales_data.append(third_d)
+sales_data.append(fourth_d)
+sales_data.append(fifth_d)
+sales_data.append(sixth_d)
+sales_data.append(seventh_d)
+sales_data.append(eighth_d)
+sales_data.append(ninth_d)
+
+print(sales_data)
 
