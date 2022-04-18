@@ -39,3 +39,4 @@ sales_data.append(ninth_d)
 
 print(sales_data)
 
+
