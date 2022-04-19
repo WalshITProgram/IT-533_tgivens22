@@ -37,10 +37,10 @@ sales_data.append(seventh_d)
 sales_data.append(eighth_d)
 sales_data.append(ninth_d)
 
-json.dump(sales_data, fp=open("transaction_data.json", "w"))
-print(open("transaction_data.json").read())
+json.dump(sales_data, fp=open("transaction_data.json", "w"))   #using dump to transfer list to json, the bottom line returns the entire file
+print(open("transaction_data.json").read())                     
 
-final = sales_data
-json_string = json.dumps(final)
+final = sales_data                                        #setting variable for list in
+json_string = json.dumps(final)                           #dumping the list into json file as a string,
 
 
