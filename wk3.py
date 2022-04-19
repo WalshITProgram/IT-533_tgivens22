@@ -39,3 +39,8 @@ sales_data.append(ninth_d)
 
 json.dump(sales_data, fp=open("transaction_data.json", "w"))
 print(open("transaction_data.json").read())
+
+final = sales_data
+json_string = json.dumps(final)
+
+
