@@ -37,10 +37,11 @@ sales_data.append(seventh_d)
 sales_data.append(eighth_d)
 sales_data.append(ninth_d)
 
+print(sales_data)
+
 json.dump(sales_data, fp=open("transaction_data.json", "w"))
 print(open("transaction_data.json").read())
 
-final = sales_data
-json_string = json.dumps(final)
+
 
 
