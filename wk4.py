@@ -37,14 +37,36 @@ print(assignments)
 
 # 4  Python can be used to select what to cook from dinner when you are being indecisive
 
-import random
+import random  # module to generate random meals in print screen
 list_of_meals = "baked chicken and green beans", "beef wellington", "tacos", "crabcakes and rice", "cobb salad", "swordfish and capers"
 print(random.choice(list_of_meals))
 
+# assigned tuple, populated tuple with meals
 # This is a tuple with my favorite meals and used the random module to pick from the foods within the list. 
 # The print statement will one of the choices from the tuple to the use randomly
 # This is good for days when I cannot decide what to eat on my own.
 # The meal choices cannot be changed so I have to make sure they were my favorites
+
+# 5 Investment tracker
+
+price_of_etherium = 3000              # assigned varible current price
+num_of_shares = 900                   # assigned varible number of shares owned
+price_when_purchased = 1700           # assigned varible price the shares were purchased at
+target_price = 10000                  # assigned varible price the owner is looking to sale at
+
+original_val = num_of_shares * price_when_purchased           # assigned expression amount spent to purchase shares
+
+current_val = num_of_shares * price_of_etherium               # assigned expression amount made or lost based on current price
+
+exit_price = target_price * num_of_shares                     # assigned expression amount the shares will be worth once Etherium hits the target price
+
+print(original_val)                                           # print commands will show the original value vs the current value vs the value when it reaches their target price
+print(current_val)
+print(exit_price)
+
+# this can be used to track an investment in Etherium. It can be modified if shares are bought or sold, and if the current price increases or decreases. They can also compare how much they have made or lost and possibly decide to sell early or hold past the target price
+
+
 
 
 
