@@ -35,3 +35,16 @@ print(assignments)
 # assigned list, populated list.  This is a list so it is mutable and can be updated each week using the append function.  The print statement allows the user to view the list, they can also use the index or slice to pull certain assignments
 # create a list of assignments and update using apprend as more assignments are given
 
+# 4  Python can be used to select what to cook from dinner when you are being indecisive
+
+import random
+list_of_meals = "baked chicken and green beans", "beef wellington", "tacos", "crabcakes and rice", "cobb salad", "swordfish and capers"
+print(random.choice(list_of_meals))
+
+# This is a tuple with my favorite meals and used the random module to pick from the foods within the list. 
+# The print statement will one of the choices from the tuple to the use randomly
+# This is good for days when I cannot decide what to eat on my own.
+# The meal choices cannot be changed so I have to make sure they were my favorites
+
+
+
