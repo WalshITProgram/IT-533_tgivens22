@@ -12,11 +12,34 @@ draft_list = [1121, "Jackie Grainger", 22.22,
 
 # creating list 
 
+employee_id_tmp = []
+employee_name_tmp = []
+hourly_wage_tmp = []
 
+# temp lists to store employee ids, names, and hourly wages from draft list that will be cleaned up in the next for loop
+# these are temp lists becuase they still have the duplicates 
 
-#print(EMPLOYEEINFO)
-#print(UNDERPAID SALR)
-#print(COMP RAISE)
+for item in draft_list:
+    if type(item) is int:
+        employee_id_tmp.append(item)
+    elif type(item) is str:
+        employee_name_tmp.append(item)
+    elif type item is float:
+        hourly_wage_tmp.append(item)
+
+# for loop, varible declared is item. if "item" is an interger it will appended to employee_id_tmp
+# if "item" is string it will be appended to name list
+# if "item" is a floating number it wil be appended to hourly_wage_tmp
+# true and false will be removed 
+
+employee_id = []
+employee_name = []
+hourly_wage = []
+
+# permenant lists to store each object type without true false and duplicated 
+
+p = 0
+
 
 
 
