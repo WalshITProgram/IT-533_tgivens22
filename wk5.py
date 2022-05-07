@@ -33,12 +33,14 @@ for item in draft_list:
 # if "item" is string it will be appended to name list
 # if "item" is a floating number it wil be appended to hourly_wage_tmp
 # true and false will be removed 
+# permenant lists to store each object type without true false and duplicated items
+
 
 employee_id = []
 employee_name = []
 hourly_wage = []
 
-# permenant lists to store each object type without true false and duplicated 
+
 
 p = 0
 
@@ -71,6 +73,7 @@ for value in employee_id:
 # the perm lists are being appended to a new list with with a three key dictionary inside the list
 # each key is being appended from 0 to the end moving one entry at a time 
 #  a the final list for he emp information was created
+# # Programmatically sorting the information into a list of dictionary items. Each dictionary must be in a database-like format.
 
 underpaid_salaries = []
 
@@ -103,6 +106,7 @@ for item in emp_info:
 # if the hourly wage item is  =< 24 and > 26 it will be multiplied by .04 and added to company raises
 # if the hourly wage item is  =< 26 and > 28 it will be multiplied by .02 and added to company raises
 # all of the items that dont fall into the ranges above will be mult by .02 and added to company raises
+# Add to a new list called company_raises the name of the employee and the raise you calculated for each person. This information will be stored as a dictionary in database-like format. 
 
 
 print(emp_info, end = '.....employee info.....\n')
