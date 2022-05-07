@@ -24,7 +24,7 @@ for item in draft_list:
         employee_id_tmp.append(item)
     elif type(item) is str:
         employee_name_tmp.append(item)
-    elif type item is float:
+    elif type (item) is float:
         hourly_wage_tmp.append(item)
 
 # for loop, varible declared is item. if "item" is an interger it will appended to employee_id_tmp
@@ -40,8 +40,17 @@ hourly_wage = []
 
 p = 0
 
+for value in employee_id_tmp:
+    if value not in employee_id:
+        employee_id.append(value)
+        employee_name.append(employee_name_tmp[p])
+        hourly_wage.append(hourly_wage_tmp[p])
+    p += 1 
 
-
+# the p variable is telling the for loop to start at the beginning of the employee_id_tmp and append the updated list to employee id
+# employee_name_tmp is being appended to employee_name starting at p
+# hourly_wage_tmp is being appended to hourly wage starting at p
+# p +=1 tells the four loop to move to the next item one at time
 
 
 
