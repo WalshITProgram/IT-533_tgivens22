@@ -105,7 +105,11 @@ for item in emp_info:
 # all of the items that dont fall into the ranges above will be mult by .02 and added to company raises
 
 
+print(emp_info, end = '.....employee info.....\n')
+print(underpaid_salaries, end = '.....underpaid salaries.....\n')
+print(company_raises, end = '.....company raises.....\n')
 
+#  printing the three final lists with custom line end to help tell when one ends and another begins
 
 
 
