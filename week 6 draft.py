@@ -115,7 +115,32 @@ while run_program:     #setting rules during the use of the program
 #If an not floating number is entered except message will appear, if nothing is entered else message will appear. 
 
 
+    emp_info.append({'emp_id': emp_id,
+                     'name': name, 'email': enter_email,
+                     'emp_address': emp_home_add, 'emp_salary': emp_salary
+                    })
+
+#appending input variables to dictionary that will be nested in a list. The input rom each loop will flow into the dictionary and be sorted by the keys. The keys match the variable name to keep things simple
 
 
+    enter_more_input = input('Would you like to continue entering employee information? Enter "N" to stop. Press any other key to continue.')
+    if enter_more_input == "N":
+        print('Thank you for entering the employee info')
+        run_program = False
+    else:
+        print('Please enter employee information')
+
+#after the user cycles thorugh all of the requests for input, the program will ask them if they want to add additioanl employees. If the type N, a thank you message will appear, if they press any other key they will be taken back to the emp_id request and cycle through to the "continue" question again
+
+for employee in emp_info:
+    employee.update((key, str(employee[key]) + ' ' + 'IT DEPARTMENT') for key, value in employee.items() if key == "name")
+    employee.update((key, float(employee[key]) * 1.3) for key, value in employee.items() if key == "emp_salary")
+
+#list comprehensions - adding IT department to the list under the name key. It will cycle thorugh each employee record and update the key that is == to name
+# same as previous line expect its multiplying flotaing numbers by 1.3 under the emp_salary key
+
+print(emp_info)
+
+#printing the user input with the list comprehension updates
 
 
