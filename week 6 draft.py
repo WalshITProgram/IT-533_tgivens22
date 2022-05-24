@@ -134,10 +134,10 @@ while run_program:     #setting rules during the use of the program
 
 for employee in emp_info:
     employee.update((key, str(employee[key]) + ' ' + 'IT DEPARTMENT') for key, value in employee.items() if key == "name")
-    employee.update((key, float(employee[key]) * 1.3) for key, value in employee.items() if key == "emp_salary")
+    employee.update((key, float(employee[key]) * .3) for key, value in employee.items() if key == "emp_salary")
 
 #list comprehensions - adding IT department to the list under the name key. It will cycle thorugh each employee record and update the key that is == to name
-# same as previous line expect its multiplying flotaing numbers by 1.3 under the emp_salary key
+# same as previous line expect its multiplying flotaing numbers by .3 under the emp_salary key
 
 print(emp_info)
 
