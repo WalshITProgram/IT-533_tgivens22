@@ -42,7 +42,7 @@ while run_program:     #setting rules during the use of the program
 #Looking for bad characters, if a bad character is found else message will appear
 
 
-    bad_email_characters = ['!', '"', "'", '#', '$',
+    bad_email_characters = ['!', '"', "'", '#', '$',           #list of prohibited characters for the email
                                 '%', '^', '&', '*', '(', 
                                 ')', '=', '+', ',', '<', 
                                 '>', '/', '?', ';', ':', 
@@ -67,6 +67,52 @@ while run_program:     #setting rules during the use of the program
 #re.match used to ensure email address has the proper format
 #If theres is a bad charter else message will appear. 
 
+
+    bad_address_characters = ['"', "'", '@', '$',          #list of prohibited characters for the address
+                              '%','^', '&', '*', 
+                              '_', '=', '+', '<', 
+                              '>', '?', ';',':', 
+                              '[', ']', '{', '}'
+                             ]
+
+    emp_add_ok = False
+    while not emp_add_ok:
+        emp_home_add = input("please enter the employees address: ")
+        if emp_home_add:
+            bad_address_characters_found = False
+            
+            for character in bad_address_characters:
+                if character in emp_home_add:
+                    bad_address_characters_found = True
+
+            if not bad_address_characters_found:
+                print("the employees address has been stored")
+                emp_add_ok = True
+        else:
+            print("The employees address contains unrecognized characters and could not be stored")
+  
+
+#Address not found yet, while loop will review the input from user for bad characters. If there are not any bad characters true variable will enf loop and move onto the next and store the address, if not else message will appear 
+    
+    emp_sal_ok = False
+
+    while not emp_sal_ok:
+        emp_salary = float(input("Please enter the employees salary: "))
+        if emp_salary:
+            try:
+                float(emp_salary)
+                if 18 < float(emp_salary) < 27:
+                    print("Your employee salary is accepted")
+                    emp_sal_ok = True
+                else:
+                    print("The employee salary is not between 18 and 27")
+            except:
+                 print("The employee salary is invalid")
+        else:
+            exit("You did not enter an employee salary")
+    
+#set to false salary has not been found yet. floating number for salary that must be between 18 to 27, if it meets those criteria it will be accepted.
+#If an not floating number is entered except message will appear, if nothing is entered else message will appear. 
 
 
 
