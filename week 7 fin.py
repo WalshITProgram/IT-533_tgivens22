@@ -74,10 +74,57 @@ def emp_email():
 #If there's is a bad charter else message will appear.
 
 
-
+def emp_address():
+    bad_address_characters = ['"', "'", '@', '$', 
+                              '%','^', '&', '*', 
+                              '_', '=', '+', '<', 
+                              '>', '?', ';',':', 
+                              '[', ']', '{', '}'
+                             ]
+    emp_add_ok = False
+    while not emp_add_ok:
+        emp_home_add = input("please enter the employees address: ")
+        if emp_home_add:
+            bad_address_characters_found = False
+            
+            for character in bad_address_characters:
+                if character in emp_home_add:
+                    bad_address_characters_found = True
+            if not bad_address_characters_found:
+                print("The address entered is: " + emp_home_add)
+                print("the employees address has been stored")
+                emp_add_ok = True
+                return emp_home_add
+        else:
+            print("The employees address contains unrecognized characters and could not be stored")
+#Defining emp_address function  
+#Address not found yet, while loop will review the input from user for bad characters. 
+# If there are not any bad characters true variable will end loop and move onto the next and store the address, and return the function back to the object to show its value if not else message will appear.
                
 
+def e_salary():
+    
+    while True:
+        enter_salary = float(input("Please enter the employees salary: "))
+    
+        if enter_salary:
+            try:
+                float(enter_salary)
+                if 18 < float(enter_salary) < 27:
+                    return enter_salary
+                      
+                else:
+                        print("The employee salary is not between 18 and 27")
+            except:
+                 print("The employee salary is invalid")
+        else:
+            exit("You did not enter an employee salary")
+#Defining e_salary function
+#set to false salary has not been found yet. floating number for salary that must be between 18 to 27, if it meets those criteria it will be accepted.  Returning the function back to the object to show its value
+#If an not floating number is entered except message will appear, if nothing is entered else message will appear. 
 
+
+fin_emp_list = []        # creating list to hold dictionaries
         
 
 
