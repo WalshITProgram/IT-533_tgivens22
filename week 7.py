@@ -27,7 +27,22 @@ def emp_id( ):
 # if nothing is entered else message will appear
 
 
+def emp_name():
+    valid_name_entered = False
+    while not valid_name_entered:
+        ent_name = input('Enter name: ')
+        if re.match("^[a-zA-Z][a-zA-Z '-]", ent_name):
+            valid_name_entered = True
+            print("Your name is: " + ent_name)
+            return ent_name
+        else:
+            print('Invalid characters found.')
 
+#defining function for the employee name
+#emp name set to false because the ID has not been accepted yet
+#re.match function will o thorugh character to make sure the are letters between a and z, in lower or uppercase
+#while loop will run until the input is accepted,  # returning the function back to the object to show its value,  after true boolen
+#Looking for bad characters, if a bad character is found else message will appear
 
 
 
