@@ -46,6 +46,32 @@ def emp_name():
 
 
 
+def emp_email():
+    bad_email_characters = ['!', '"', "'", '#', '$',                    #list of prohibited characters for the email
+                                '%', '^', '&', '*', '(', 
+                                ')', '=', '+', ',', '<', 
+                                '>', '/', '?', ';', ':', 
+                                '[', ']', '{', '}','\\',
+                           ]
+    emp_email_ok = False
+    while not emp_email_ok:
+        enter_email = input("Please enter the employees email address: ")
+        if re.match('[\S]+[@][\S]+[.]\w{2,3}$', enter_email):
+            bad_email_characters_found = False
+                        
+            for character in bad_email_characters:
+                if character in enter_email:
+                    bad_email_characters_found = True
+            if not bad_email_characters_found:
+                emp_email_ok = True
+                print("Email address entered is: " + enter_email)
+                return enter_email
+        else:
+            print("The employees email address contains unrecognized characters and could not be stored") 
+#defining function for the employee name. Emailed has not been entered yet. Asking for input, if a bad character is found the email address will be rejected. for loop will cycle through looking for bad characters, if there are none the loop store info and skip to next loop
+#re.match used to ensure email address has the proper format, if the proper format is entered a message will appear showing the user what has been entered.  That input will be returned
+# returning the function back to the object to show its value,  after true Boolean
+#If there's is a bad charter else message will appear.
 
 
 
