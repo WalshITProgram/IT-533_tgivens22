@@ -127,6 +127,24 @@ def e_salary():
 fin_emp_list = []        # creating list to hold dictionaries
         
 
+run_program = True        #Running program
+while run_program:        #Setting protocol for program, to run loop until interrepted
+    unique_id = emp_id()
+
+    first_last = emp_name()
+
+    email = emp_email()
+
+    address = emp_address()
+
+    salary =  e_salary()
+#setting variables to call the functions for the id, name, email, address, and salary from the user input requested above.
+#the variables will be appended to the dictionaires as keys, the information gathered from the functions above will be added to the corresponding keys
+ 
+    fin_emp_list.append({'unique_id': unique_id,
+                         'first_last': first_last, 'email': email,
+                         'address': address, 'salary': salary
+                       })
 
 
 
