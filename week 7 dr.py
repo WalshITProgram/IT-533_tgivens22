@@ -189,13 +189,14 @@ comp_loop()
 #list comprehensions - adding IT department to the list under the name key. It will cycle thorugh each employee record and update the key that is == to name
 # same as previous line expect its multiplying flotaing numbers by .3 under the emp_salary key
 
+def js():
+    json_file = open('C:/Users/THOMAS AND MONET/Desktop/programming 22/IT-533_tgivens22/IT-533_tgivens22/employee_data.json')
+    json.dump(fin_emp_list, fp=open("employee_data.json", "w"))   #using dump to transfer list to json, the bottom line returns the entire file
+    print(open("employee_data.json"))                    
 
-json_file = open('C:/Users/THOMAS AND MONET/Desktop/programming 22/IT-533_tgivens22/IT-533_tgivens22/employee_data.json')
-json.dump(fin_emp_list, fp=open("employee_data.json", "w"))   #using dump to transfer list to json, the bottom line returns the entire file
-print(open("employee_data.json"))                    
-
-final = fin_emp_list                                        #setting variable for list in
-json_string = json.dumps(final)                          #dumping the list into json file as a string,
+    final = fin_emp_list                                        #setting variable for list in
+    json_string = json.dumps(final) 
+js()                         #dumping the list into json file as a string,
 
 
  # setting variable to dump infomation from final list into a json file #using dump to transfer list to json, the bottom line returns the entire file
