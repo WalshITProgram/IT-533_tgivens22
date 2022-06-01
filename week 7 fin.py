@@ -146,7 +146,45 @@ while run_program:        #Setting protocol for program, to run loop until inter
                          'address': address, 'salary': salary
                        })
 
+run_program = True        #Running program
+while run_program:        #Setting protocol for program, to run loop until interrepted
+    unique_id = emp_id()
 
+    first_last = emp_name()
+
+    email = emp_email()
+
+    address = emp_address()
+
+    salary =  e_salary()
+#setting variables to call the functions for the id, name, email, address, and salary from the user input requested above.
+#the variables will be appended to the dictionaires as keys, the information gathered from the functions above will be added to the corresponding keys
+ 
+    fin_emp_list.append({'unique_id': unique_id,
+                         'first_last': first_last, 'email': email,
+                         'address': address, 'salary': salary
+                       })
+
+
+    kg = input('Would you like to enter more employees\' information? Answer "N" to stop. Press any other key to continue.')
+    if kg == "N":
+        print('Finished entering employee information.')
+        # Break the "while run_problem:" loop to stop asking for inputs if the user chooses not to enter more information.
+        run_program = False
+    else:
+        # Continue the "while run_problem:" loop to ask for more inputs if the user decides to enter more information.
+        print('Please enter more employee information')
+
+# Asking the user to enter more employees but entering N to stop, or pressing any other key to continue
+#If the press end the program will end, if they press any other key it will start over with asking for the ID
+
+def comp_loop():
+    for employee in fin_emp_list:
+        employee.update((key, str(employee[key]) + ' ' + 'IT Department') for key, value in employee.items() if key == "first_last")
+        employee.update((key, float(employee[key]) * 1.3) for key, value in employee.items() if key == "salary")
+comp_loop()
+#defining function for list comprehensions
+#list comprehensions - adding IT department to the list under the name key. It will cycle through each employee record and update the key that is == to name
 
 
   
