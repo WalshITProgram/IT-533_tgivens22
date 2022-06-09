@@ -55,7 +55,40 @@ class validator():
 
 # valid name function - while true the user will enter the name, the name will have to match the format in the regular expression line. 
 # if bad charcters from the bad characters check are found in the print message will appear letting the user know invalid characters have been found.
-# If no characters are found the function will be returned, if a name is not entered the invalid email format message will appear              
+# If no characters are found the function will be returned, if a name is not entered the invalid email format message will appear    
+# 
+
+        def valid_id():
+            if self.__class__.__name__ == 'Student':
+                max_ID_length = 7
+            elif self.__class__.__name__ == 'Instructor':
+                max_ID_length = 5
+            while True:
+                enter_id = input("Please enter the user ID: ")
+                if enter_id:
+                    try:
+                        int(enter_id)                 # The input needs to be digits.
+                        if len(enter_id) <= max_ID_length:         # The input needs to be less than the max id length.
+                            return enter_id
+                              
+                        else:
+                            print("The user ID is too long")
+                    except:
+                        print("The user ID is invalid")
+                else:
+                    exit("You did not enter an user ID")
+
+
+        self.ID = valid_id()   
+        self.email = valid_email()
+        self.name = valid_name()
+
+# function will aks for the user ID, the length of the ID will vary based on the user type.  
+# if the length is correct and an integer the Id will be retured. 
+# if incorrect messages will appear if the entry is too long, too short, or not an id 
+# calling functions to generate id, email and name
+
+
 
 
                 
