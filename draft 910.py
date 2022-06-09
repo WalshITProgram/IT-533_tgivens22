@@ -27,6 +27,21 @@ class validator():
 #creating class - validator
 #creating a function to check for bad characters, iterate through each character entered and if bad characters are found the function will be returned as true
 
-        
+        def valid_email():
+            while True: 
+                enter_email = input("Please enter the users email address: ")
+                if re.match('[\S]+[@][\S]+[.]\w{2,3}$', enter_email):  
+                    if bad_characters_check(enter_email, bad_characters):
+                        print("Invalid bad characters found.")
+                    else:
+                        return enter_email
+                else:
+                    print("Invalid email format")
+
+# valid email function - while true the user will enter the email address, the email address will have to match the format in the regular expression line. 
+# if bad charcters from the bad characters check are found in the enter_email varibale a message will appear letting the user know invalid characters have been found.
+# If no characters are found the function will be returned, if an email is not entered the invalid email format message will appear
+
+
                 
 
