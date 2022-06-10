@@ -73,7 +73,7 @@ class validator():
                 user_id = input('Please enter the user ID: ')
                 if user_id :
                     try:
-                        int(user_id )                 # The input needs to be digits.
+                        int(user_id )                              # The input must be an integer.
                         if len(user_id ) <= max_ID_length:         # The input needs to be less than the max id length.
                             return user_id                               
                         else:
