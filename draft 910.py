@@ -101,7 +101,7 @@ class validator():
 
 #calling functions for id, email, and name
 
-class student(validator,display_information): 
+class student(validator, display_information): 
     ''' Class student - inheriting validator (name, id, and email) and display information (creating a printable objects to add to the library). 
         Calling itself first, role is student, initalizing the validator next, asking the student for their program of study
     '''
@@ -114,7 +114,7 @@ class student(validator,display_information):
 #class student - inheriting validator (name, id, and email) and display information (creating a printable objects to add to the library). 
 # Calling itself first, role is student, initalizing the validator next, asking the student for their program of study
 
-class instructor(validator,display_information):
+class instructor(validator, display_information):
     '''Class instructor - inheriting validator (name, id, and email) and display information (creating a printable objects to add to the library). 
        Calling itself first, role is instructor, initalizing the validator next, asking the instructor for last institution attended and highest degree obtained 
     '''
