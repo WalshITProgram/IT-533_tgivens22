@@ -58,7 +58,7 @@ class validator():
 # If no characters are found the function will be returned, if a name is not entered the invalid email format message will appear    
 # 
 
-        def a_valid_id():
+        def valid_id():
             '''# function will aks for the user ID, the length of the ID will vary based on the user type.  
                # if the length is correct and an integer the Id will be retured. 
                # if incorrect messages will appear if the entry is too long, too short, or not an id 
@@ -84,7 +84,7 @@ class validator():
                     exit("You did not enter an user ID")
 
 
-        self.ID = a_valid_id()   
+        self.ID = valid_id()   
         self.email = valid_email()
         self.name = valid_name()
 
@@ -139,10 +139,10 @@ def keep_going():
     '''
     kg = input('Would you like to enter more users? Answer "n" to stop. Press any other key to continue.')
     if kg == "n":
-        print('Finished entering user information.')
+        print('Finished entering user information.')                          #if they press "n", the program will end and the list will print
         return False
     else:
-        print('Please enter more users')
+        print('Please enter more users')                                      #if they press any key other than "n", the program will restart
         return True
 
 
