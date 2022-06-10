@@ -58,7 +58,7 @@ class validator():
 # If no characters are found the function will be returned, if a name is not entered the invalid email format message will appear    
 # 
 
-        def valid_id():
+        def a_valid_id():
             '''# function will aks for the user ID, the length of the ID will vary based on the user type.  
                # if the length is correct and an integer the Id will be retured. 
                # if incorrect messages will appear if the entry is too long, too short, or not an id 
@@ -70,13 +70,12 @@ class validator():
             elif self.__class__.__name__ == 'Instructor':
                 max_ID_length = 5
             while True:
-                enter_id = input("Please enter the user ID: ")
-                if enter_id:
+                user_id = input('Please enter the user ID: ')
+                if user_id :
                     try:
-                        int(enter_id)                 # The input needs to be digits.
-                        if len(enter_id) <= max_ID_length:         # The input needs to be less than the max id length.
-                            return enter_id
-                              
+                        int(user_id )                 # The input needs to be digits.
+                        if len(user_id ) <= max_ID_length:         # The input needs to be less than the max id length.
+                            return user_id                               
                         else:
                             print("The user ID is too long")
                     except:
@@ -85,7 +84,7 @@ class validator():
                     exit("You did not enter an user ID")
 
 
-        self.ID = valid_id()   
+        self.ID = a_valid_id()   
         self.email = valid_email()
         self.name = valid_name()
 
@@ -136,10 +135,8 @@ def collect_ind_info():
 
 
 def keep_going(): 
-
     '''Asking the user to enter more employees by entering N to stop, or preesing any other key to continue
     '''
-
     kg = input('Would you like to enter more users? Answer "n" to stop. Press any other key to continue.')
     if kg == "n":
         print('Finished entering user information.')
@@ -149,8 +146,24 @@ def keep_going():
         return True
 
 
-       
+college_records = []
+run_program = True
+while run_program:
 
+    ind = collect_ind_info()
+
+    if ind not in college_records:
+        college_records.append(ind)
+
+    run_program = keep_going()
+
+print(college_records)
+     
+
+# Creating list - college records to hold dictionary entries. creating program to iterate thorugh each entry, if it is not already present it will be appended
+# to college records
+# calling the keep going function
+#printing the list 
 
 
 
