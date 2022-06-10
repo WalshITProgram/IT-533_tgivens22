@@ -98,7 +98,7 @@ class validator():
         self.email = valid_email()
         self.name = valid_name()
 
-
+#calling functions for id, email, and name
 
 class student(validator,display_information): 
     ''' Class student - inheriting validator (name, id, and email) and display information (creating a printable objects to add to the library). 
