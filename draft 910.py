@@ -59,6 +59,12 @@ class validator():
 # 
 
         def valid_id():
+            '''# function will aks for the user ID, the length of the ID will vary based on the user type.  
+               # if the length is correct and an integer the Id will be retured. 
+               # if incorrect messages will appear if the entry is too long, too short, or not an id 
+               # calling functions to generate id, email and name
+            '''
+
             if self.__class__.__name__ == 'Student':
                 max_ID_length = 7
             elif self.__class__.__name__ == 'Instructor':
@@ -83,12 +89,13 @@ class validator():
         self.email = valid_email()
         self.name = valid_name()
 
-# function will aks for the user ID, the length of the ID will vary based on the user type.  
-# if the length is correct and an integer the Id will be retured. 
-# if incorrect messages will appear if the entry is too long, too short, or not an id 
-# calling functions to generate id, email and name
+
 
 class student(validator,display_information): 
+    ''' Class student - inheriting validator (name, id, and email) and display information (creating a printable objects to add to the library). 
+        Calling itself first, role is student, initalizing the validator next, asking the student for their program of study
+    '''
+
     def __init__(self): 
         self.role = 'Student'
         validator.__init__(self)  
@@ -98,6 +105,10 @@ class student(validator,display_information):
 # Calling itself first, role is student, initalizing the validator next, asking the student for their program of study
 
 class instructor(validator,display_information):
+    '''Class instructor - inheriting validator (name, id, and email) and display information (creating a printable objects to add to the library). 
+       Calling itself first, role is instructor, initalizing the validator next, asking the instructor for last institution attended and highest degree obtained 
+    '''
+
     def __init__(self):                     
         self.role = 'Instructor'
         validator.__init__(self)
@@ -106,6 +117,41 @@ class instructor(validator,display_information):
 
 #class instructor - inheriting validator (name, id, and email) and display information (creating a printable objects to add to the library). 
 # Calling itself first, role is instructor, initalizing the validator next, asking the instructor for last institution attended and highest degree obtained 
+
+
+def collect_ind_info():
+
+    '''Asking if the user is a student or instructor
+       Information will return accordingly based on the users answer
+    ''' 
+
+    while True:
+        user_type = input("Is this a Student or Instructor: ")
+        if user_type == 'Student':
+            return student()
+        elif user_type == 'Instructor' :
+            return instructor()
+        else:
+            print("Please select Student or Instructor")
+
+
+def keep_going(): 
+
+    '''Asking the user to enter more employees by entering N to stop, or preesing any other key to continue
+    '''
+
+    kg = input('Would you like to enter more users? Answer "n" to stop. Press any other key to continue.')
+    if kg == "n":
+        print('Finished entering user information.')
+        return False
+    else:
+        print('Please enter more users')
+        return True
+
+
+       
+
+
 
 
 
