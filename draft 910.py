@@ -88,6 +88,12 @@ class validator():
 # if incorrect messages will appear if the entry is too long, too short, or not an id 
 # calling functions to generate id, email and name
 
+class student(validator,display_information): 
+    def __init__(self): 
+        self.role = 'Student'
+        validator.__init__(self)  
+        self.program_of_study = input('Please enter the program of study: ')                   
+       
 
 
 
