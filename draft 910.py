@@ -94,6 +94,18 @@ class student(validator,display_information):
         validator.__init__(self)  
         self.program_of_study = input('Please enter the program of study: ')                   
        
+#class student - inheriting validator (name, id, and email) and display information (creating a printable objects to add to the library). 
+# Calling itself first, role is student, initalizing the validator next, asking the student for their program of study
+
+class instructor(validator,display_information):
+    def __init__(self):                     
+        self.role = 'Instructor'
+        validator.__init__(self)
+        self.last_institution_they_graduated_from = input('Please enter the name of the last institution the Instructor graduated from: ') 
+        self.highest_degree_attained = input('Please enter the highest degree attained by the Instructor: ')
+
+#class instructor - inheriting validator (name, id, and email) and display information (creating a printable objects to add to the library). 
+# Calling itself first, role is instructor, initalizing the validator next, asking the instructor for last institution attended and highest degree obtained 
 
 
 
