@@ -34,6 +34,11 @@ class validator():
 #creating a function to check for bad characters, iterate through each character entered and if bad characters are found the function will be returned as true
 
         def valid_email():
+
+            ''' valid email function - while true the user will enter the email address, the email address will have to match the format in the regular expression line. 
+                if bad charcters from the bad characters check are found in the enter_email varibale a message will appear letting the user know invalid characters have been found.
+                If no characters are found the function will be returned, if an email is not entered the invalid email format message will appear
+            '''
             while True: 
                 enter_email = input("Please enter the users email address: ")
                 if re.match('[\S]+[@][\S]+[.]\w{2,3}$', enter_email):  
@@ -44,11 +49,14 @@ class validator():
                 else:
                     print("Invalid email format")
 
-# valid email function - while true the user will enter the email address, the email address will have to match the format in the regular expression line. 
-# if bad charcters from the bad characters check are found in the enter_email varibale a message will appear letting the user know invalid characters have been found.
-# If no characters are found the function will be returned, if an email is not entered the invalid email format message will appear
+
 
         def valid_name():
+
+            ''' valid name function - while true the user will enter the name, the name will have to match the format in the regular expression line. 
+                if bad charcters from the bad characters check are found in the print message will appear letting the user know invalid characters have been found.
+                If no characters are found the function will be returned, if a name is not entered the invalid email format message will appear
+            '''
             while True:   
                 enter_name = input("Please enter name : ")
                 if re.match("^[a-zA-Z][a-zA-Z '-]", enter_name):
@@ -59,16 +67,14 @@ class validator():
                 else:
                     print("Invalid name entered")
 
-# valid name function - while true the user will enter the name, the name will have to match the format in the regular expression line. 
-# if bad charcters from the bad characters check are found in the print message will appear letting the user know invalid characters have been found.
-# If no characters are found the function will be returned, if a name is not entered the invalid email format message will appear    
+    
 # 
 
         def valid_id():
-            '''# function will aks for the user ID, the length of the ID will vary based on the user type.  
-               # if the length is correct and an integer the Id will be retured. 
-               # if incorrect messages will appear if the entry is too long, too short, or not an id 
-               # calling functions to generate id, email and name
+            ''' function will aks for the user ID, the length of the ID will vary based on the user type.  
+                if the length is correct and an integer the Id will be retured. 
+                if incorrect messages will appear if the entry is too long, too short, or not an id 
+                calling functions to generate id, email and name
             '''
 
             if self.__class__.__name__ == 'Student':
