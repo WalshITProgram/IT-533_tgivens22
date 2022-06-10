@@ -65,10 +65,8 @@ class validator():
                     else:
                         return enter_name
                 else:
-                    print("Invalid name entered")
+                    print("Invalid name entered")    
 
-    
-# 
 
         def valid_id():
             ''' function will aks for the user ID, the length of the ID will vary based on the user type.  
