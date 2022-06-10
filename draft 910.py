@@ -95,8 +95,9 @@ class validator():
 
 
         self.ID = valid_id()   
-        self.email = valid_email()
         self.name = valid_name()
+        self.email = valid_email()
+        
 
 #calling functions for id, email, and name
 
