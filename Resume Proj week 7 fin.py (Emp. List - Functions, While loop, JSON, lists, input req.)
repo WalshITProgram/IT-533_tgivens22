@@ -1,4 +1,4 @@
-import re   #importing regular expression to match the string input for the name input
+import re   #importing regular expression to match the stri ng input for the name input
 import json   #importing json
 
 def emp_id( ):
